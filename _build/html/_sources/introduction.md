@@ -40,12 +40,12 @@ NASA provides a lot more information about the physical characteristics of Jupit
 
 There might even be more planets out there with a similar mass to Jupiter {cite}`mayor1995jupiter,guillot1999interiors`!
 
+We have a set $S$ and functions $f_n:S\to\mathbb{R}$,$n\in\mathbb{N}$, and $f:S\to \mathbb{R}$. Then $f_n\to f$ pointwise on $S$ as $n\to\infty$ if every $x\in S$, the real sequence $(f_n(x))_n$ converges to $f(x)$. In symbols
+
+$$\forall x\in S \quad \forall \epsilon>0 \quad \forall N\in \mathbb{N}\quad \left|f_n(x)-f(x)\right|<\epsilon$$
+
 ## Bibliography
 
 ```{bibliography} references.bib
 ```
 
-
-
-We have a set $S$ and functions $f_n:S\to\mathbb{R}$,$n\in\mathbb{N}$, and $f:S\to \mathbb{R}$. Then $f_n\to f$ pointwise on $S$ as $n\to\infty$ if every $x\in S$, the real sequence $(f_n(x))_n$ converges to $f(x)$. In symbols
-$$\forall x\in S \quad \forall \epsilon>0 \quad \forall N\in \mathbb{N}\quad \left|f_n(x)-f(x)\right|<\epsilon$$

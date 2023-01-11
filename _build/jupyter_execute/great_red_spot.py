@@ -18,6 +18,18 @@
 # In[1]:
 
 
+get_ipython().run_cell_magic('latex', '', '\n\\begin{equation}\nx^2+y^2=z^2\n\\end{equation}\n\n\\begin{align}\n\\int_a^b (x+3)^5 \\; \\text{d}x &= \\left(\\theta^2 + \\rho\\mu\\alpha^c\\right)\\\\\nx^2 + y^2 &= z^2\n\\end{align}')
+
+
+# In[2]:
+
+
+get_ipython().run_cell_magic('latex', '', '\\begin{align}\n\\nabla \\times \\vec{\\mathbf{B}} -\\, \\frac1c\\, \\frac{\\partial\\vec{\\mathbf{E}}}{\\partial t} & = \\frac{4\\pi}{c}\\vec{\\mathbf{j}} \\\\\n\\nabla \\cdot \\vec{\\mathbf{E}} & = 4 \\pi \\rho \\\\\n\\nabla \\times \\vec{\\mathbf{E}}\\, +\\, \\frac1c\\, \\frac{\\partial\\vec{\\mathbf{B}}}{\\partial t} & = \\vec{\\mathbf{0}} \\\\\n\\nabla \\cdot \\vec{\\mathbf{B}} & = 0\n\\end{align}')
+
+
+# In[3]:
+
+
 import pandas as pd
 pd.options.plotting.backend = "plotly"
 
@@ -27,7 +39,7 @@ df['Year'] = df['Year'].astype(int)
 df.head()
 
 
-# In[2]:
+# In[4]:
 
 
 import plotly.io as pio
@@ -39,7 +51,7 @@ fig.update_layout(title={'text': "Great Red Spot Size", 'x':0.5, 'y':0.92})
 fig.update_traces(marker=dict(size=7))
 
 
-# In[3]:
+# In[5]:
 
 
 fig = df.plot.scatter(x="Year", y="GRS Length",

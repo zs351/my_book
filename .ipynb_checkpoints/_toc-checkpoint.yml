@@ -6,3 +6,4 @@ parts:
 - caption: Get started
   chapters:
   - file: great_red_spot
+  - file: RKHS
