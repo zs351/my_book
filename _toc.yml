@@ -1,0 +1,8 @@
+format: jb-book
+root: introduction
+defaults:
+    numbered : true
+parts:
+- caption: Get started
+  chapters:
+  - file: great_red_spot
