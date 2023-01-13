@@ -1,51 +1,5 @@
-# Jupiter Book
+# Intro
 
-This book contains information about the planet Jupiter - the fifth planet from the sun and the largest planet in the solar system! {numref}`jupiter-figure` below shows an image of Jupiter captured by the Hubble Space Telescope on June 27, 2019.
+Hi, my name is Steve. Welcome to my website. 
 
-```{figure} https://solarsystem.nasa.gov/system/resources/detail_files/2486_stsci-h-p1936a_1800.jpg
----
-height: 300px
-name: jupiter-figure
----
-The beautiful planet Jupiter! Source: [NASA](https://solarsystem.nasa.gov/resources/2486/hubbles-new-portrait-of-jupiter/?category=planets_jupiter).
-```
-
-## The Mass of Jupiter
-
-We can estimate the mass of Jupiter from the period and size of an object orbiting it. For example, we can use Jupiter's moon Callisto to estimate it's mass.
-
-Callisto's period: $p_{c}=16.7 days$
-
-Callisto's orbit radius: $r_{c}=1,900,000 km$
-
-Now, using [Kepler's Law](https://solarsystem.nasa.gov/resources/310/orbits-and-keplers-laws/) we can work out the mass of Jupiter.
-
-```{math}
-:label: eq1
-m_{j} \approx \frac{r_{c}}{p_{c}} \times 7.9 \times 10^{10}
-```
-
-```{math}
-:label: eq2
-m_{j} \approx 1.9 \times 10^{27} kg
-```
-
-```{margin} Did you know?
-Jupiter is 11.0x larger than Earth!
-```
-
-```{hint}
-NASA provides a lot more information about the physical characteristics of Jupiter [here](https://solarsystem.nasa.gov/planets/jupiter/by-the-numbers/).
-```
-
-There might even be more planets out there with a similar mass to Jupiter {cite}`mayor1995jupiter,guillot1999interiors`!
-
-We have a set $S$ and functions $f_n:S\to\mathbb{R}$,$n\in\mathbb{N}$, and $f:S\to \mathbb{R}$. Then $f_n\to f$ pointwise on $S$ as $n\to\infty$ if every $x\in S$, the real sequence $(f_n(x))_n$ converges to $f(x)$. In symbols
-
-$$\forall x\in S \quad \forall \epsilon>0 \quad \forall N\in \mathbb{N}\quad \left|f_n(x)-f(x)\right|<\epsilon$$
-
-## Bibliography
-
-```{bibliography} references.bib
-```
 
