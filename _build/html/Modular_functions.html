@@ -1,0 +1,627 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>1. Introduction to Modular Forms &#8212; My sample book</title>
+    
+  <!-- Loaded before other Sphinx assets -->
+  <link href="_static/styles/theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+<link href="_static/styles/pydata-sphinx-theme.css?digest=1999514e3f237ded88cf" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    <link rel="stylesheet" type="text/css" href="_static/pygments.css" />
+    <link rel="stylesheet" href="_static/styles/sphinx-book-theme.css?digest=5115cc725059bd94278eecd172e13a965bf8f5a9" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="_static/proof.css" />
+    <link rel="stylesheet" type="text/css" href="_static/design-style.b7bb847fb20b106c3d81b95245e65545.min.css" />
+    
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf">
+
+    <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
+    <script src="_static/jquery.js"></script>
+    <script src="_static/underscore.js"></script>
+    <script src="_static/doctools.js"></script>
+    <script src="_static/clipboard.min.js"></script>
+    <script src="_static/copybutton.js"></script>
+    <script src="_static/scripts/sphinx-book-theme.js?digest=9c920249402e914e316237a7dbc6769907cce411"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+    <link rel="index" title="Index" href="genindex.html" />
+    <link rel="search" title="Search" href="search.html" />
+    <link rel="next" title="2. Applications of modular forms" href="mf_applications.html" />
+    <link rel="prev" title="Jupiter Book" href="introduction.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="60">
+<!-- Checkboxes to toggle the left sidebar -->
+<input type="checkbox" class="sidebar-toggle" name="__navigation" id="__navigation" aria-label="Toggle navigation sidebar">
+<label class="overlay overlay-navbar" for="__navigation">
+    <div class="visually-hidden">Toggle navigation sidebar</div>
+</label>
+<!-- Checkboxes to toggle the in-page toc -->
+<input type="checkbox" class="sidebar-toggle" name="__page-toc" id="__page-toc" aria-label="Toggle in-page Table of Contents">
+<label class="overlay overlay-pagetoc" for="__page-toc">
+    <div class="visually-hidden">Toggle in-page Table of Contents</div>
+</label>
+<!-- Headers at the top -->
+<div class="announcement header-item noprint"></div>
+<div class="header header-item noprint"></div>
+
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<!-- Sidebar -->
+<div class="bd-sidebar noprint" id="site-navigation">
+    <div class="bd-sidebar__content">
+        <div class="bd-sidebar__top"><div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="index.html">
+      
+      
+      
+      <h1 class="site-logo" id="site-title">My sample book</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        
+        <ul class="nav bd-sidenav bd-sidenav__home-link">
+            <li class="toctree-l1">
+                <a class="reference internal" href="introduction.html">
+                    Jupiter Book
+                </a>
+            </li>
+        </ul>
+        <p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Modular Forms
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   1. Introduction to Modular Forms
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="mf_applications.html">
+   2. Applications of modular forms
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav></div>
+        <div class="bd-sidebar__bottom">
+             <!-- To handle the deprecated key -->
+            
+            <div class="navbar_extra_footer">
+            Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+            </div>
+            
+        </div>
+    </div>
+    <div id="rtd-footer-container"></div>
+</div>
+
+
+          
+
+
+          
+<!-- A tiny helper pixel to detect if we've scrolled -->
+<div class="sbt-scroll-pixel-helper"></div>
+<!-- Main content -->
+<div class="col py-0 content-container">
+    
+    <div class="header-article row sticky-top noprint">
+        
+
+
+
+<div class="col py-1 d-flex header-article-main">
+    <div class="header-article__left">
+        
+        <label for="__navigation"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="right"
+title="Toggle navigation"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-bars"></i>
+  </span>
+
+</label>
+
+        
+    </div>
+    <div class="header-article__right">
+<button onclick="toggleFullScreen()"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="bottom"
+title="Fullscreen mode"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+<div class="menu-dropdown menu-dropdown-repository-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Source repositories">
+      <i class="fab fa-github"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Source repository"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="headerbtn__text-container">repository</span>
+</a>
+
+      </li>
+      
+      <li>
+        <a href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FModular_functions.html&body=Your%20issue%20content%20here."
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Open an issue"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="headerbtn__text-container">open issue</span>
+</a>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+
+<div class="menu-dropdown menu-dropdown-download-buttons">
+  <button class="headerbtn menu-dropdown__trigger"
+      aria-label="Download this page">
+      <i class="fas fa-download"></i>
+  </button>
+  <div class="menu-dropdown__content">
+    <ul>
+      <li>
+        <a href="_sources/Modular_functions.md"
+   class="headerbtn"
+   data-toggle="tooltip"
+data-placement="left"
+title="Download source file"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="headerbtn__text-container">.md</span>
+</a>
+
+      </li>
+      
+      <li>
+        
+<button onclick="printPdf(this)"
+  class="headerbtn"
+  data-toggle="tooltip"
+data-placement="left"
+title="Print to PDF"
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="headerbtn__text-container">.pdf</span>
+</button>
+
+      </li>
+      
+    </ul>
+  </div>
+</div>
+<label for="__page-toc"
+  class="headerbtn headerbtn-page-toc"
+  
+>
+  
+
+<span class="headerbtn__icon-container">
+  <i class="fas fa-list"></i>
+  </span>
+
+</label>
+
+    </div>
+</div>
+
+<!-- Table of contents -->
+<div class="col-md-3 bd-toc show noprint">
+    <div class="tocsection onthispage pt-5 pb-3">
+        <i class="fas fa-list"></i> Contents
+    </div>
+    <nav id="bd-toc-nav" aria-label="Page">
+        <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-modular-group">
+   1.1. The modular group
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#modular-functions">
+   1.2. Modular functions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#motivation-of-the-modularity-condition">
+     1.2.1. Motivation of the modularity condition
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#examples-of-modular-forms">
+     1.2.2. Examples of modular forms
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+    </nav>
+</div>
+    </div>
+    <div class="article row">
+        <div class="col pl-md-3 pl-lg-5 content-container">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Introduction to Modular Forms</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#the-modular-group">
+   1.1. The modular group
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#modular-functions">
+   1.2. Modular functions
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#motivation-of-the-modularity-condition">
+     1.2.1. Motivation of the modularity condition
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#examples-of-modular-forms">
+     1.2.2. Examples of modular forms
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            <main id="main-content" role="main">
+                
+              <div>
+                
+  <div class="math notranslate nohighlight">
+\[\newcommand\calH{\mathcal{H}}
+\newcommand\calX{\mathcal{X}}
+\newcommand\calF{\mathcal{F}}
+\newcommand\floor[1]{\lfloor#1\rfloor}
+\newcommand{\bmat}{\left[\begin{array}}
+\newcommand{\emat}{\end{array}\right]}
+\newcommand\inner[2]{\left\langle #1, #2 \right\rangle}
+\newcommand\norm[1]{\lVert #1 \rVert}
+\]</div>
+<section class="tex2jax_ignore mathjax_ignore" id="introduction-to-modular-forms">
+<h1><span class="section-number">1. </span>Introduction to Modular Forms<a class="headerlink" href="#introduction-to-modular-forms" title="Permalink to this headline">#</a></h1>
+<section id="the-modular-group">
+<h2><span class="section-number">1.1. </span>The modular group<a class="headerlink" href="#the-modular-group" title="Permalink to this headline">#</a></h2>
+</section>
+<section id="modular-functions">
+<h2><span class="section-number">1.2. </span>Modular functions<a class="headerlink" href="#modular-functions" title="Permalink to this headline">#</a></h2>
+<div class="proof definition admonition" id="modular_function">
+<p class="admonition-title"><span class="caption-number">Definition 1.1 </span></p>
+<section class="definition-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\(k\)</span> be an integer. We say that a function is <em>weakly modular</em> of weight <span class="math notranslate nohighlight">\(k\)</span> if <span class="math notranslate nohighlight">\(f\)</span> is meromorphic on the half plane <span class="math notranslate nohighlight">\(\mathbb{H}\)</span> and verifies the relation</p>
+<div class="math notranslate nohighlight" id="equation-modl-fn">
+<span class="eqno">(1.1)<a class="headerlink" href="#equation-modl-fn" title="Permalink to this equation">#</a></span>\[
+f(z) = (cz+d)^{-2k}f\left(\frac{az+b}{cz+d}\right)
+\]</div>
+</section>
+</div><section id="motivation-of-the-modularity-condition">
+<h3><span class="section-number">1.2.1. </span>Motivation of the modularity condition<a class="headerlink" href="#motivation-of-the-modularity-condition" title="Permalink to this headline">#</a></h3>
+<p>Consider the family of compact of orientable surfaces <span class="math notranslate nohighlight">\(\frac{\mathbb{H}}{G}\)</span> where <span class="math notranslate nohighlight">\(G\)</span> is a discrete subgroup of <span class="math notranslate nohighlight">\(SL_2(\mathbb{R})\)</span>.</p>
+<p>To study a surface, we want to study “nice” functions defined on the surface, for instance meromorphic functions. In this case, we want functions invariant with respect to the group action of <span class="math notranslate nohighlight">\(G\)</span>, i.e.</p>
+<div class="math notranslate nohighlight">
+\[
+f(gz) = f(z)\quad\forall\;g\in G
+\]</div>
+<p>These are hard to produce! So we relax the requirement to</p>
+<div class="math notranslate nohighlight">
+\[
+f(gz) = j(g,z)f(z)
+\]</div>
+<p>and note that if <span class="math notranslate nohighlight">\(f,g\neq 0\)</span> satisfy this condition  then <span class="math notranslate nohighlight">\(\frac{f}{g}\)</span> would be invariant under <span class="math notranslate nohighlight">\(G\)</span>.</p>
+<p>By definition of group action, for <span class="math notranslate nohighlight">\(g_1\)</span>, <span class="math notranslate nohighlight">\(g_2\in G\)</span>, <span class="math notranslate nohighlight">\(\left(g_1g_2\right)z = g_1\left(g_2z\right)\)</span>. We deduce</p>
+<div class="math notranslate nohighlight" id="equation-j-s-chain-rule">
+<span class="eqno">(1.2)<a class="headerlink" href="#equation-j-s-chain-rule" title="Permalink to this equation">#</a></span>\[
+j(g_1g_2,z)f(z) = f\left(\left(g_1g_2\right)z\right) = f\left(g_1\left(g_2z\right)\right) = j(g_1,g_2z)f(g_2z) = j(g_1,g_2z)j(g_2,z)f(z)
+\]</div>
+<p>So</p>
+<div class="math notranslate nohighlight">
+\[
+j(g_1g_2,z)\;=\;j(g_1,g_2z)j(g_2,z)
+\]</div>
+<p>This is analogous to the chain rule for differentiation, so the easiest guess is</p>
+<div class="math notranslate nohighlight">
+\[
+j(g,z) = (gz)' = \frac{ad-bc}{(cz+d)^2} = (cz+d)^{-2}
+\]</div>
+<p>so that</p>
+<div class="math notranslate nohighlight">
+\[
+(g_1g_2z)' = \left(g_1g_2\right)'(z) = g_2'(z)\cdot g_1'(g_2(z))
+\]</div>
+<p>and clearly <span class="math notranslate nohighlight">\((cz+d)^{-2k}\)</span> will also satisfy <a class="reference internal" href="#equation-j-s-chain-rule">(1.2)</a>.</p>
+<p>We can rewrite the modularity condition <a class="reference internal" href="#equation-modl-fn">(1.1)</a> as</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{f(gz)}{f(z)} = \left(\frac{d(gz)}{dz}\right)^{-k}
+\]</div>
+<p>or</p>
+<div class="math notranslate nohighlight">
+\[
+f(gz)d(gz)^k\;=\;f(z)(dz)^k
+\]</div>
+<p>This means that the “differential form of weight <span class="math notranslate nohighlight">\(k\)</span>” <span class="math notranslate nohighlight">\(f(z)(dz)^k\)</span> is <em>invariant</em> under <span class="math notranslate nohighlight">\(G\)</span>.</p>
+<p><span class="math notranslate nohighlight">\(Sz = -\frac{1}{z}\)</span>, <span class="math notranslate nohighlight">\(Tz = z+1\)</span>. Since <span class="math notranslate nohighlight">\(G\)</span> is generated by the elements <span class="math notranslate nohighlight">\(S\)</span> and <span class="math notranslate nohighlight">\(T\)</span>, it suffices to check the invariance by <span class="math notranslate nohighlight">\(S\)</span> and by <span class="math notranslate nohighlight">\(T\)</span>. This gives</p>
+<div class="proof proposition admonition" id="functional_equations_mf">
+<p class="admonition-title"><span class="caption-number">Proposition 1.1 </span></p>
+<section class="proposition-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\(f\)</span> be meromorphic on <span class="math notranslate nohighlight">\(\mathbb{H}\)</span>. The function <span class="math notranslate nohighlight">\(f\)</span> is a weakly modular function of weight <span class="math notranslate nohighlight">\(2k\)</span> iff it satisfies the two relations</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+\begin{align}
+f(z+1)&amp;= f(z)\\
+f\left(-\frac{1}{z}\right) &amp;= z^{2k}\;f(z)
+\end{align}
+\end{split}\]</div>
+</section>
+</div><p>Suppose <span class="math notranslate nohighlight">\(f(z+1) = f(z)\)</span> is satisfied. We can then express <span class="math notranslate nohighlight">\(f\)</span> as a function of <span class="math notranslate nohighlight">\(q = e^{2\pi iz}\)</span>, function which we will denote by <span class="math notranslate nohighlight">\(\tilde{f}\)</span>. It is meromorphic in the punctured disc <span class="math notranslate nohighlight">\(\left\{q\mid |q|&lt;1,\;q\neq 0\right\}\)</span>. If <span class="math notranslate nohighlight">\(\tilde{f}\)</span> extends to a meromorphic (resp.) holomorphic function at the origin, we say that <span class="math notranslate nohighlight">\(f\)</span> is meromorphic (resp. holomorphic) at <span class="math notranslate nohighlight">\(\infty\)</span>. This means that <span class="math notranslate nohighlight">\(\tilde{f}\)</span> admits a Laurent expansion in a neighbourhood of the origin</p>
+<div class="math notranslate nohighlight">
+\[
+\tilde{f}(q) = \sum_{-\infty}^{\infty}a_n\;q^n
+\]</div>
+<p>where <span class="math notranslate nohighlight">\(a_n\)</span> are zero for <span class="math notranslate nohighlight">\(n\)</span> small enough (resp. for <span class="math notranslate nohighlight">\(n&lt;0\)</span>)</p>
+<div class="proof definition admonition" id="modular_fn">
+<p class="admonition-title"><span class="caption-number">Definition 1.2 </span></p>
+<section class="definition-content" id="proof-content">
+<p>A weakly modular function <span class="math notranslate nohighlight">\(f\)</span> is called <em>modular</em> if it is meromorphic at <span class="math notranslate nohighlight">\(\infty\)</span>.</p>
+</section>
+</div><div class="proof definition admonition" id="modular_form">
+<p class="admonition-title"><span class="caption-number">Definition 1.3 </span></p>
+<section class="definition-content" id="proof-content">
+<p>A modular function which is holomorphic everywhere (including <span class="math notranslate nohighlight">\(\infty\)</span>) is called a <em>modular form</em>; if such a function is zero at infinity, it is called a cusp form.</p>
+</section>
+</div><p>A modular function of weight <span class="math notranslate nohighlight">\(2k\)</span> is thus given by a series</p>
+<div class="math notranslate nohighlight">
+\[
+f(z) = \sum_{n=0}^{\infty} a_n\;q^n = \sum_{n=0}^{\infty}\;a_ne^{2\pi inz}
+\]</div>
+<p>which converges for <span class="math notranslate nohighlight">\(|q|&lt;1\)</span> (i.e. for Im<span class="math notranslate nohighlight">\((z)&gt;0\)</span>), and which verifies the identity</p>
+<div class="math notranslate nohighlight">
+\[
+f\left(-\frac{1}{z}\right) = z^{2k}\;f(z)
+\]</div>
+<p>It is a cusp form if <span class="math notranslate nohighlight">\(a_0 = 0\)</span>.</p>
+<div class="proof lemma admonition" id="lemma-4">
+<p class="admonition-title"><span class="caption-number">Lemma 1.1 </span></p>
+<section class="lemma-content" id="proof-content">
+<p>If <span class="math notranslate nohighlight">\(f\)</span> and <span class="math notranslate nohighlight">\(f'\)</span> are modular forms of weight <span class="math notranslate nohighlight">\(2k\)</span> and <span class="math notranslate nohighlight">\(2k'\)</span>, the product <span class="math notranslate nohighlight">\(ff'\)</span> is a modular form of weight <span class="math notranslate nohighlight">\(2k + 2k'\)</span>.</p>
+</section>
+</div></section>
+<section id="examples-of-modular-forms">
+<h3><span class="section-number">1.2.2. </span>Examples of modular forms<a class="headerlink" href="#examples-of-modular-forms" title="Permalink to this headline">#</a></h3>
+<div class="proof example admonition" id="discriminant_modular_form">
+<p class="admonition-title"><span class="caption-number">Example 1.1 </span></p>
+<section class="example-content" id="proof-content">
+<p>We define the <span class="math notranslate nohighlight">\(\Delta\)</span> function and the Ramanujan <span class="math notranslate nohighlight">\(\tau\)</span> function in the following way</p>
+<div class="math notranslate nohighlight">
+\[
+\Delta(z) := \frac{E_4(z)^3 - E_6(z)^2}{1728} = \sum_{n=1}^{\infty}\tau(n)q^n = q\cdot \prod_{n\geq 1}\left(1-q^n\right)^{24}
+\]</div>
+<p>The Fourier coefficients of <span class="math notranslate nohighlight">\(\Delta(z)\)</span> are all integers, and they are also multiplicative, that is <span class="math notranslate nohighlight">\(\tau(mn) = \tau(m)\tau(n)\)</span> if <span class="math notranslate nohighlight">\((m,n)=1\)</span>. They also satisfy recurrence relations; if <span class="math notranslate nohighlight">\(p\)</span> is a prime, then</p>
+<div class="math notranslate nohighlight">
+\[
+\tau\left(p^n\right) = \tau(p)\cdot \tau\left(p^{n-1}\right) - p^{11}\cdot \tau\left(p^{n-2}\right)
+\]</div>
+<p>for <span class="math notranslate nohighlight">\(n\geq 2\)</span>. These facts are consequences of the theory of <em>Hecke operators</em>.</p>
+<p>Fact: <span class="math notranslate nohighlight">\(\Delta\)</span> is a cusp form of weight <span class="math notranslate nohighlight">\(12\)</span>. (In class 1 we took the third formula as the definition)</p>
+<p>Question: Is <span class="math notranslate nohighlight">\(\tau(n) = 0\)</span> for some <span class="math notranslate nohighlight">\(n\in \mathbb{N}\)</span>? The consensus is no.</p>
+</section>
+</div><div class="proof example admonition" id="example-6">
+<p class="admonition-title"><span class="caption-number">Example 1.2 </span></p>
+<section class="example-content" id="proof-content">
+<p>Let <span class="math notranslate nohighlight">\(k\geq 4\)</span> be an even integer, and let <span class="math notranslate nohighlight">\(z\in \mathcal{H}\)</span>. The <em>Eisenstein series</em> of weight <span class="math notranslate nohighlight">\(k\)</span> is</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}
+G_k(z)\;:=\;\frac{(k-1)!}{2(2\pi i)^k}\sum_{\substack{m,n\in \mathbb{Z}\\(m,n)\neq(0,0)}} \;\frac{1}{(mz+n)^k}
+\end{split}\]</div>
+<div class="proof proposition admonition" id="proposition-7">
+<p class="admonition-title"><span class="caption-number">Proposition 1.2 </span></p>
+<section class="proposition-content" id="proof-content">
+<p><span class="math notranslate nohighlight">\(G_k(z)\)</span> is a nonzero modular form of weight <span class="math notranslate nohighlight">\(k\)</span> for <span class="math notranslate nohighlight">\(SL_2(\mathbb{Z})\)</span>.</p>
+</section>
+</div><p>The modular form <span class="math notranslate nohighlight">\(G_k(z)\)</span> has Fourier expansion</p>
+<div class="math notranslate nohighlight">
+\[
+    G_k(z)\;:= \; -\frac{B_k}{2k} + \sum_{n\geq 1} \sigma_{k-1}(n)q^n
+\]</div>
+<p>where we define <span class="math notranslate nohighlight">\(\sigma_{r}(n)\;=\;\sum_{d\mid n, d&gt;0}\;d^r\quad\forall\;r\in\mathbb{N}\)</span>.</p>
+<div class="math notranslate nohighlight">
+\[
+    E_k(z)\;:=\;\frac{G_k(z)}{-\frac{B_k}{2k}} = 1 - \frac{2k}{B_k}\sum_{n=1}^{\infty}\sigma_{k-1}(n)q^n
+\]</div>
+<p>is called the <em>normalised Eisenstein series of weight <span class="math notranslate nohighlight">\(k\)</span></em>.</p>
+</section>
+</div><div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>The <em>Bernoulli numbers</em> are defined by</p>
+<div class="math notranslate nohighlight">
+\[
+\frac{x}{e^x - 1}\; =\; \sum_{k\geq 0}\quad B_k\;\frac{x^k}{k!}\;=\; 1\;-\;\frac{1}{2}\;x\;+\;\frac{1}{12}\;x^2\;-\;\dots
+\]</div>
+<p>(<span class="math notranslate nohighlight">\(B_0 = 1\)</span> , <span class="math notranslate nohighlight">\(B_1 = -\frac{1}{2}\)</span> , <span class="math notranslate nohighlight">\(B_2 = \frac{1}{6}\)</span> , <span class="math notranslate nohighlight">\(B_3 = 0\)</span> , <span class="math notranslate nohighlight">\(\dots\)</span>)</p>
+<p>Note that <span class="math notranslate nohighlight">\(B_{2n+1} = 0\)</span> for <span class="math notranslate nohighlight">\(n\geq 1\)</span> since <span class="math notranslate nohighlight">\(\frac{x}{e^x - 1}\;+\;\frac{x}{2}\)</span> is an even function.</p>
+<p>They are related to Riemann zeta function by</p>
+<div class="math notranslate nohighlight">
+\[
+    \zeta(2n)\;=\;\frac{(-1)^{n+1}\;B_{2n}\;(2\pi)^{2n}}{2\;(2n)!} \neq 0 \quad \forall\;n\in \mathbb{N}
+\]</div>
+</div>
+</section>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./."
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            </main>
+            <footer class="footer-article noprint">
+                
+    <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+    <a class='left-prev' id="prev-link" href="introduction.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Jupiter Book</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="mf_applications.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title"><span class="section-number">2. </span>Applications of modular forms</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
+</div>
+            </footer>
+        </div>
+    </div>
+    <div class="footer-content row">
+        <footer class="col footer"><p>
+  
+    By The Jupyter Book Community<br/>
+  
+      &copy; Copyright 2022.<br/>
+</p>
+        </footer>
+    </div>
+    
+</div>
+
+
+      </div>
+    </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="_static/scripts/pydata-sphinx-theme.js?digest=1999514e3f237ded88cf"></script>
+
+
+  </body>
+</html>

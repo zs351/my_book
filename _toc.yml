@@ -1,9 +1,15 @@
 format: jb-book
 root: introduction
 defaults:
-    numbered : true
+    numbered : false
+    titlesonly: True
 parts:
-- caption: Get started
-  chapters:
-  - file: great_red_spot
-  - file: RKHS
+    - caption : Modular Forms
+      numbered: True
+      chapters :
+      - file : Modular_functions
+      - file : mf_applications
+
+    
+
+

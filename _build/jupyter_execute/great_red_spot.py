@@ -14,11 +14,13 @@
 # ```
 # 
 # Jupiter's GRS has been observed to be shrinking for about the last century and a half! [Here](https://github.com/UBC-DSCI/jupyterdays/tree/master/jupyterdays/sessions/beuzen/data) is some data of the length of the GRS spanning the last ~150 years which we can use to investigate this phenomenon.
+# 
+# 
 
 # In[1]:
 
 
-get_ipython().run_cell_magic('latex', '', '\n\\begin{equation}\nx^2+y^2=z^2\n\\end{equation}\n\n\\begin{align}\n\\int_a^b (x+3)^5 \\; \\text{d}x &= \\left(\\theta^2 + \\rho\\mu\\alpha^c\\right)\\\\\nx^2 + y^2 &= z^2\n\\end{align}')
+get_ipython().run_cell_magic('latex', '', '\n\\begin{equation}\nx^2+y^2=z^2\n\\end{equation}\n\n\\begin{align}\n\\int_a^b (x+3)^5 \\; \\text{d}x &= \\left(\\theta^2 + \\rho\\mu\\alpha^c\\right)\\\\\nx^2 + y^2 &= z^2\n\\end{align}\n')
 
 
 # In[2]:
